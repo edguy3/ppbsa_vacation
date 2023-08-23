@@ -1,0 +1,75 @@
+version 1.0.03
+==============
+1. Most files have some updated formatting.
+
+2. Added ability to print PDF reports.
+
+3. Added 5 reports for PDF format.
+
+4. Added a print.css file so printscreens would print without unordered list format.
+
+
+Version 1.0.01
+==============
+
+Changes from version 1.0
+
+
+1. includes/header.inc.php - 9/29/05
+	a. Fixed javascript error that was causing the dropdown menu to stay visisble
+	   if the user was not an administrator.
+
+2. admin/apprv_pending_vacations.php - 9/29/05
+	a. Finished the deny vacations option.  
+
+3. admin/time_off_types - 9/30/05
+	a. Added a field (status) that was not getting inserted into the table correctly by the form. 
+
+4. admin/timeoff_step1.php - 9/30/05
+	a. Added a return variable to display errors
+
+5. admin/vacation_detail.php - 9/30/05
+	a. Removed some dead code
+
+6. admin/vacation_summary_step2.php - 9/30/05
+	a. Removed some dead code
+
+7. admin/change_vacation_type_step2.php - 9/30/05
+	a. Removed some dead code
+
+8. admin/config.php - 9/30/05
+	a. Changed some variables from $_GET to $_REQUEST
+
+9. admin/date_restrictions.php - 9/30/05
+	a. Changed some variables from $_GET to $_REQUEST
+
+10. admin/employee_change_vac_type.php - 9/30/05
+	a. Changed some variables from $_GET to $_REQUEST
+
+11. vacation_detail.php - 9/30/05
+	a. Removed some dead code
+
+12. vacation_detail_all.php - 9/30/05
+	a. Removed some dead code
+
+Database changes
+================
+
+  tables
+  ------
+
+    vf_employee - added one field  - 9/30/05
+	 
+	enabled  char(1) 
+
+    vf_vacation - added two fields - 9/30/05
+
+	deny  char(1)
+	deny_reason  varchar(200)
+
+
+===================================================================================================
+
+
+
+

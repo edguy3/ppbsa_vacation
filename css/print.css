@@ -1,0 +1,90 @@
+/*********************************************************************************************************/
+/*	Page elements that should not be printed
+/*********************************************************************************************************/
+.noprint,.hdn,ul.menublock,ul.submenublock,#sidenav,#footer,#globals,#breadcrumb,#header
+{
+	display:			none;
+}
+
+a.topnav,a.topnav-active
+{
+	display:			none;
+}
+
+/*********************************************************************************************************/
+/*	Hide select edit elements
+/*********************************************************************************************************/
+a.selectedit,a.selectedit_preview,input.selectedit,input.siteeditbutton,input.selectedit_preview
+{
+	display:			none;
+}
+
+#selectedit_list
+{
+	display:			none;
+}
+
+/*********************************************************************************************************/
+/*	Print-specific styling
+/*********************************************************************************************************/
+body
+{
+	margin:				0in 0.5in;
+	background-color:	white;
+	background-image:	none;
+}
+
+h1
+{
+	margin:				18pt 0pt 10pt;
+	font-family:		times new roman,times,serif;
+	font-weight:		bold;
+	font-size:			16pt;
+	color:				black;
+}
+
+h2
+{
+	page-break-after:	avoid;
+
+	margin:				0pt;
+	font-family:		times new roman,times,serif;
+	font-weight:		bold;
+	font-size:			8pt;
+	color:				black;
+}
+
+.bodytext,.bodytext2
+{
+	margin:				0pt 0pt 16pt;
+	text-align:			justify;
+	line-height:		10pt;
+	font-family:		times new roman,times,serif;
+	font-size:			8pt;
+	color:				black;
+}
+
+.bodytext2
+{
+	line-height:		10pt;
+}
+
+a
+{
+	text-decoration:	none;
+	color:				rgb(153,51,51);
+}
+
+/*	show URL of printed links	*/
+h2 a:after, #content a:after
+{
+	content: 		" (" attr(href) ") ";
+	font-size:		8pt;
+	color:			rgb(153,51,51);
+}
+
+/*	for all root-relative links, prepend website URL	*/
+h2 a[href^="/"]:after, #content a[href^="/"]:after
+{
+	content: " (http://uber.newfangled.com" attr(href) ") ";
+}

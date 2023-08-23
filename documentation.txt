@@ -1,0 +1,73 @@
+
+
+                 ************************** IMPORTANT **************************
+
+This project is in the very early stages and I would consider myself more of a program hacker
+than a pure programmer. This is a project that I wrote for people to use where I work (about
+500 people). I know that for the general public there are currently a lot of shortfalls with 
+the program. I would love to find people interested in making this program more versitile and 
+robust while helping me code it in a more efficient manner. The database could be done better 
+also, but you know what they say. "You have to start somewhere". 
+
+I do feel that this program would be very useful to small businesses to track vaction requests
+and that is why I am submitting it. Even if there ends up being a complete rewrite I think it
+is a great program idea.
+
+In the future I would like to give the ability to export data to other Human Resource programs
+so the data does not have to be entered manually.
+
+
+--------------------
+PROGRAM INSTALLATION
+--------------------
+
+
+1. Create a database for the vacation.sql file and import the file.  
+
+2. Edit the /includes/db_info.inc.php file to allow access to your new database
+
+3. Edit the /includes/config.inc.php file. This file displays information in the footer of each page
+
+4. You can create a company logo to be added to the top left of each page. The image should be no larger
+   than 165 x 70. If you create a larger image you must change settings in /css/site.css and /includes/menu.inc.php.
+
+5. Open the vacation program in a browser and login as 
+		user: admin 
+		password: admin
+	Admin is limited to site configuration and adding employees. Once you add yourself to the system you should become the
+	site administrator. Each supervisor must setup their departments default configuration.		
+		
+6. Browse the menus to Administration > Site setup
+	
+	A. Select "Add/edit employee categories" and create employee categories like FT = Full Time
+
+	B. Select "Add/edit company departments" and create your company departments
+
+	C. Select Add/edit time off types" and create timeoff types like "Vacation Paid", "Vacation Unpaid",
+	   "Personal Day" etc...
+  	D. Select "Add/edit fiscal year information". This controls the year that all vaction requests are associated with
+  	   for calculating time left for the year.
+
+  	E. Select "Add holidays and notable dates". You can add any holidays or important company dates that will be displayed 
+  	   on the calendar. 
+
+  	F. Select "Add a new employee". You must add new employees and associate them with a department.
+		-- Add yourself first and become a site administrator then log in with your username and password
+
+  	G. Select "Add/update earned time off". After employees are entered you must add their earned time off before 
+  	   they can request time off
+
+7. Log out and login with your new user ID.
+
+8. Before you can view the vacation calendar you must configure your department - 
+	On the menu go to Administration > Configure vacation restrictions for your department
+	 A. Fill in all fields.
+
+9. More notes will be added over time. This is just a start.
+
+
+-------
+CREDITS
+-------
+
+	Gary Barber  < barber.gary@gmail.com >
